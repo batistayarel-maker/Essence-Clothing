@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.categorias, .productos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card, .producto {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card img, .producto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.precio-old {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.precio-new {
+  color: red;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
