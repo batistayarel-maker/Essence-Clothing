@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 18px;
+  padding: 20px 18px;
   position: sticky;
   top: 0;
   z-index: 30;
@@ -29,7 +29,7 @@ body {
 .menu-btn, .cart-btn {
   background: transparent;
   border: none;
-  padding: 6px;
+  padding: 1%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ body {
 }
 .menu-btn img, .cart-btn img { width: 22px; height: 22px; }
 .header { position: relative; }
-.logo-img { height: 84px; width: auto; display: block; margin: 0 auto; object-fit: contain; position: absolute; left: 50%; transform: translateX(-50%); top: 6px; }
+.logo-img { height: 55px; width: auto; display: block; margin: 0 auto; object-fit: contain; position: absolute; left: 50%; transform: translateX(-50%); top: 6px; }
 
 /* Collage below header */
 .hero-collage {
