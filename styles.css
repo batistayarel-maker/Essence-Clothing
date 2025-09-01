@@ -39,55 +39,19 @@ body {
 .header { position: relative; }
 .logo-img { height: 55px; width: auto; display: block; margin: 0 auto; object-fit: contain; position: absolute; left: 50%; transform: translateX(-50%); top: 6px; }
 
-/* Collage below header */
-.hero-collage {
-  padding: 28px 10px 44px 10px;
-  background: linear-gradient(#f6f6f6, #ffffff);
+/* Hero background: usa una sola imagen de fondo en lugar del collage */
+.hero-bg {
+  height: 520px;
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.collage {
-  max-width: 760px;
-  margin: 0 auto;
-  height: 640px;
-  position: relative;
-  display: grid;
-  place-items: center;
-}
-.collage-link { display: block; position: absolute; }
-.collage-link { display: block; position: absolute; }
-.collage-item {
-  width: 150px;
-  opacity: 0.98;
-  transform-origin: center;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
-}
-.collage-link:hover .collage-item { transform: scale(1.03); filter: brightness(1.03); box-shadow: 0 18px 40px rgba(0,0,0,0.22); }
-.collage-link:nth-child(1) .collage-item  { left: 6%;   top: 6%;   transform: rotate(-14deg) scale(0.9); }
-.collage-link:nth-child(2) .collage-item  { left: 38%;  top: 6%;   transform: rotate(6deg)  scale(0.9); }
-.collage-link:nth-child(3) .collage-item  { left: 68%;  top: 6%;   transform: rotate(20deg) scale(0.92); }
-.collage-link:nth-child(4) .collage-item  { left: 6%;   top: 28%;  transform: rotate(-6deg) scale(0.95); }
-.collage-link:nth-child(5) .collage-item  { left: 36%;  top: 24%;  transform: rotate(2deg)  scale(1); width:220px }
-.collage-link:nth-child(6) .collage-item  { left: 66%;  top: 28%;  transform: rotate(12deg) scale(0.95); }
-.collage-link:nth-child(7) .collage-item  { left: 10%;  top: 52%;  transform: rotate(10deg) scale(0.9); }
-.collage-link:nth-child(8) .collage-item  { left: 34%;  top: 52%;  transform: rotate(-8deg) scale(0.96); width:180px }
-.collage-link:nth-child(9) .collage-item  { left: 60%;  top: 52%;  transform: rotate(8deg)  scale(0.94); }
-.collage-link:nth-child(10) .collage-item { left: 80%;  top: 52%;  transform: rotate(-12deg) scale(0.92); }
-.collage-link:nth-child(11) .collage-item { left: 24%;  top: 74%;  transform: rotate(6deg)  scale(0.9); }
-.collage-link:nth-child(12) .collage-item { left: 56%;  top: 74%;  transform: rotate(-6deg) scale(0.9); }
-
-.collage-center-text {
-  position: absolute;
-  left: 50%;
-  top: 46%;
-  transform: translate(-50%, -50%);
-  font-size: 36px;
-  letter-spacing: 6px;
-  color: rgba(0,0,0,0.55);
-  font-weight: 600;
-  pointer-events: none;
-}
+.hero-inner { text-align: center; color: rgba(0,0,0,0.55); }
+.hero-title { font-size: 40px; letter-spacing: 6px; font-weight: 700; }
 
 /* Layout sections */
 .categorias, .productos {
