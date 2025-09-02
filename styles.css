@@ -1,3 +1,116 @@
+.store-title-attract {
+  width: 100%;
+  background: #000;
+  text-align: center;
+  padding: 18px 0 8px 0;
+  position: relative;
+  z-index: 10;
+}
+.store-title-attract h1 {
+  margin: 0;
+}
+.moving-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 8px;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.22);
+  animation: bounceScaleColor 2.2s cubic-bezier(.4,.2,.2,1) infinite;
+}
+@keyframes bounceScaleColor {
+  0% { transform: scale(1) translateY(0); color: #fff; }
+  20% { transform: scale(1.12) translateY(-10px); color: #00ffe7; }
+  40% { transform: scale(0.98) translateY(0); color: #fff; }
+  60% { transform: scale(1.09) translateY(-7px); color: #ffea00; }
+  80% { transform: scale(1) translateY(0); color: #fff; }
+  100% { transform: scale(1) translateY(0); color: #fff; }
+}
+.moving-title {
+  animation: moveTitle 3.5s ease-in-out infinite alternate;
+}
+@keyframes moveTitle {
+  0% { transform: translateX(-12px); }
+  50% { transform: translateX(12px); }
+  100% { transform: translateX(-12px); }
+}
+/* Hero section with background image and overlay */
+.hero-bg {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-img-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.98;
+}
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  margin-bottom: 18px;
+  text-align: center;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.hero-sale-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 10px 38px;
+  border-radius: 4px;
+  margin-top: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.18s;
+}
+.hero-sale-btn:hover {
+  background: #222;
+  transform: scale(1.06);
+}
+/* Collage background for hero section */
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg-img {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('collage.jpg') center/contain no-repeat;
+  opacity: 0.98;
+  z-index: 1;
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.38) 100%);
+  z-index: 2;
+}
 /* --- Animaciones continuas para dar vida --- */
 .categorias .card {
   animation: floatCard 3.2s ease-in-out infinite alternate, fadeInUp 0.8s cubic-bezier(.4,.2,.2,1) forwards;
